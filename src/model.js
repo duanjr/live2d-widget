@@ -19,8 +19,31 @@ class Model {
     }
 
     async loadModelList() {
-        const response = await fetch(`${this.cdnPath}model_list.json`);
-        this.modelList = await response.json();
+        // const response = await fetch(`${this.cdnPath}model_list.json`);
+        this.modelList = {
+            "models": [
+                [
+                    "HyperdimensionNeptunia/neptune_classic",
+                    "HyperdimensionNeptunia/nepnep",
+                    "HyperdimensionNeptunia/neptune_santa",
+                    "HyperdimensionNeptunia/nepmaid",
+                    "HyperdimensionNeptunia/nepswim",
+                    "HyperdimensionNeptunia/noir_classic",
+                    "HyperdimensionNeptunia/noir",
+                    "HyperdimensionNeptunia/noir_santa",
+                    "HyperdimensionNeptunia/noireswim",
+                    "HyperdimensionNeptunia/blanc_classic",
+                    "HyperdimensionNeptunia/blanc_normal",
+                    "HyperdimensionNeptunia/blanc_swimwear",
+                    "HyperdimensionNeptunia/vert_classic",
+                    "HyperdimensionNeptunia/vert_normal",
+                    "HyperdimensionNeptunia/vert_swimwear",
+                ]
+            ],
+            "messages": [ 
+                "Nep! Nep! 超次元游戏：海王星 系列"
+            ]
+        }
     }
 
     async loadModel(modelId, modelTexturesId, message) {

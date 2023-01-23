@@ -65,7 +65,7 @@ const tools = {
         icon: fa_xmark,
         callback: () => {
             localStorage.setItem("waifu-display", Date.now());
-            showMessage("愿你有一天能与重要的人重逢。", 2000, 11);
+            showMessage("愿你有一天能够找到真爱与自由。", 2000, 11);
             document.getElementById("waifu").style.bottom = "-500px";
             setTimeout(() => {
                 document.getElementById("waifu").style.display = "none";
